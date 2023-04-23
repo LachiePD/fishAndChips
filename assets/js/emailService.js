@@ -1,5 +1,5 @@
 const form = document.getElementById('contact-form');
-
+require('dotenv').config();
 
 form.addEventListener('submit', async(event)=>{
 	event.preventDefault();
