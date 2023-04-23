@@ -1,4 +1,6 @@
 
+
+const api = 'https://autoemail.onrender.com/sendMail';
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', async(event)=>{
