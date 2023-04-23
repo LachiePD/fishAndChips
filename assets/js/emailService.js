@@ -1,5 +1,5 @@
+
 const form = document.getElementById('contact-form');
-require('dotenv').config();
 
 form.addEventListener('submit', async(event)=>{
 	event.preventDefault();
@@ -11,7 +11,7 @@ form.addEventListener('submit', async(event)=>{
 
 	try{
 
-		const response	=	await fetch(process.env.SERVICE_URL,{
+		const response	=	await fetch('https://autoemail.onrender.com/sendMail',{
 			method:'POST',
 			headers:{
 				'Content-Type':'application/json'
