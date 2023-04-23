@@ -11,7 +11,7 @@ form.addEventListener('submit', async(event)=>{
 
 	try{
 
-		const response	=	await fetc("RENDER_SERVICE_URL",{
+		const response	=	await fetch("RENDER_SERVICE_URL",{
 			method:'POST',
 			headers:{
 				'Content-Type':'application/json'
